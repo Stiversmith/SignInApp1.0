@@ -13,6 +13,7 @@ class VerVC: BaseViewController {
     let randomInt = Int.random(in: 100000 ... 999999)
     var sleepTime = 3
     
+    
     @IBOutlet weak var infLbl: UILabel!
     @IBOutlet weak var codeTf: UITextField!
     @IBOutlet weak var errLbl: UILabel!

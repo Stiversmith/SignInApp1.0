@@ -18,6 +18,10 @@
 		B8783AD82A9976EC00CB60C0 /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8783AD72A9976EC00CB60C0 /* SignInStoryboard.storyboard */; };
 		B8783ADA2A9978D900CB60C0 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8783AD92A9978D900CB60C0 /* SignUpStoryboard.storyboard */; };
 		B8783ADD2A997EEE00CB60C0 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8783ADC2A997EEE00CB60C0 /* SignInVC.swift */; };
+		B89994E62A9D493200DCA551 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89994E52A9D493200DCA551 /* UserModel.swift */; };
+		B89994E82A9D51BB00DCA551 /* VerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89994E72A9D51BB00DCA551 /* VerVC.swift */; };
+		B89994EA2A9D6E6800DCA551 /* WelcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89994E92A9D6E6800DCA551 /* WelcVC.swift */; };
+		B8E840FD2A9C19660033760E /* VerifServ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E840FC2A9C19660033760E /* VerifServ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		B8783AD72A9976EC00CB60C0 /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		B8783AD92A9978D900CB60C0 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
 		B8783ADC2A997EEE00CB60C0 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		B89994E52A9D493200DCA551 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B89994E72A9D51BB00DCA551 /* VerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerVC.swift; sourceTree = "<group>"; };
+		B89994E92A9D6E6800DCA551 /* WelcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcVC.swift; sourceTree = "<group>"; };
+		B8E840FC2A9C19660033760E /* VerifServ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifServ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		B8783AB62A9973AD00CB60C0 = {
 			isa = PBXGroup;
 			children = (
+				B89994E42A9D491A00DCA551 /* Models */,
 				B80C3A022A9BDDCF00F7C312 /* Extantion */,
 				B86E951F2A9A9E32006E84F2 /* Images */,
 				B8783AC12A9973AD00CB60C0 /* SignInApp1.0 */,
@@ -87,6 +96,7 @@
 				B8783ADB2A997E8900CB60C0 /* Controllers */,
 				B8783AD62A99749100CB60C0 /* Views */,
 				B8783ACB2A9973AD00CB60C0 /* Assets.xcassets */,
+				B8E840FB2A9C19480033760E /* Services */,
 				B8783AD02A9973AD00CB60C0 /* Info.plist */,
 				B8783AC22A9973AD00CB60C0 /* AppDelegate.swift */,
 				B8783AC42A9973AD00CB60C0 /* SceneDelegate.swift */,
@@ -110,8 +120,26 @@
 			children = (
 				B8783ADC2A997EEE00CB60C0 /* SignInVC.swift */,
 				B80C39FE2A9ABED800F7C312 /* SignUpVC.swift */,
+				B89994E72A9D51BB00DCA551 /* VerVC.swift */,
+				B89994E92A9D6E6800DCA551 /* WelcVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B89994E42A9D491A00DCA551 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B89994E52A9D493200DCA551 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8E840FB2A9C19480033760E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B8E840FC2A9C19660033760E /* VerifServ.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +217,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B80C39FF2A9ABED800F7C312 /* SignUpVC.swift in Sources */,
+				B89994E62A9D493200DCA551 /* UserModel.swift in Sources */,
+				B89994EA2A9D6E6800DCA551 /* WelcVC.swift in Sources */,
 				B8783AC32A9973AD00CB60C0 /* AppDelegate.swift in Sources */,
 				B8783AC52A9973AD00CB60C0 /* SceneDelegate.swift in Sources */,
+				B89994E82A9D51BB00DCA551 /* VerVC.swift in Sources */,
 				B80C3A042A9BDDF400F7C312 /* UIViewContExt.swift in Sources */,
+				B8E840FD2A9C19660033760E /* VerifServ.swift in Sources */,
 				B8783ADD2A997EEE00CB60C0 /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
